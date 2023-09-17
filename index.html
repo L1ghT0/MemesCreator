@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <script defer src="src/js/index.js" type="module"></script>
+    <link href="src/assets/styles/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="create" id="create">
+                Create
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="creatorPage">
+            <div class="createNew">
+                <input type="button" value="Create a new meme" id="createNew">
+            </div>
+            <div class="creator">
+                <div class="result-wrapper">
+                    <h1>Your meme:</h1>
+                    <div class="result">
+
+                    </div>
+                </div>
+                <div class="editor">
+                    <h1>Editor</h1>
+                    <div class="edit-avatar">
+                        <label for="uploadAvatar">Upload avatar</label>
+                        <input type="file" id="uploadAvatar">
+                    </div>
+                    <div class="edit-text">
+                        <input type="button" id="addText" value="Add text">
+                        <div class="textSettings">
+                            <div id="setColor">
+                                rgb (
+                                <input type="text" id="red" class="color" value="0">,
+                                <input type="text" id="green" class="color" value="0">,
+                                <input type="text" id="blue" class="color" value="0"> )
+
+                            </div>
+                            <div id="setFontSize">
+                                Font-size:
+                                <input type="text" id="fontSize" value="16"> <span>px</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="removeItem">
+                        <input type="button" value="Delete" id="remove">
+                    </div>
+                    <div class="DownloadMeme">
+                        <input type="button" value="Download" id="DownloadMeme">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
